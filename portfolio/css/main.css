@@ -1,0 +1,35 @@
+body{
+font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero{
+    margin: 25rem;
+    padding: 5rem;
+    animation-duration: 1s;
+    animation-name: animate-fade;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    background-color: antiquewhite;
+    
+}
+
+@keyframes hero-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
