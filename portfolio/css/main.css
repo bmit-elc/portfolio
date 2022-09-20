@@ -61,3 +61,15 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
     from{border-right-color: rgba(255,255,255,.75);}
     to{border-right-color: transparent;}
 }
+
+/*FOOTER*/
+footer{
+  padding: 2rem;
+  align-content: center;
+}
+
+.signature{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+}
