@@ -2,6 +2,7 @@ body{
 font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+/*BACKGROUND VIDEO*/
 #myVideo {
     width: 100vw;
     height: 100vh;
@@ -14,17 +15,18 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
     z-index: -1;
 }
 
+/*PRESENTATION HERO*/
 .hero{
-    margin: 25rem;
+    margin: 20%;
     padding: 5rem;
     animation-duration: 1s;
     animation-name: animate-fade;
     animation-delay: 0.5s;
     animation-fill-mode: backwards;
     background-color: antiquewhite;
-    
 }
 
+/*HERO FADE?????????*/
 @keyframes hero-fade {
     0% {
       opacity: 0;
@@ -33,3 +35,29 @@ font-family:Verdana, Geneva, Tahoma, sans-serif
       opacity: 1;
     }
   }
+
+/*TYPEWRITER TITLE*/
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}    
+.hero-title{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}
