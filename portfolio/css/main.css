@@ -24,20 +24,35 @@ body {
   padding: 2vw;
   margin-left: 20vw;
   margin-top: 10vw;
+  
 }
 
-.nav-bar {
+/*NAVBAR*/
+aside{
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
+.nav-bar {
+  text-align-last: center;
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/*NAVBAR BUTTONS*/
+.nav-button {
+  max-width: min-content;
+  margin: 0.5vw;
+  align-self: center;
+}
+
 /*TYPEWRITER TITLE*/
 .line-1 {
   position: relative;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 5rem;
-  text-align: center;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -45,7 +60,7 @@ body {
   animation: typewriter 3s steps(24) 1s 1 normal both, blinkTextCursor 500ms steps(24) infinite normal;
   display: flex;
   flex-direction: row;
-  font-size: large;
+  font-size: 1.2vw;
 }
 
 @keyframes typewriter {
@@ -66,22 +81,6 @@ body {
   }
 }
 
-/*NAVBAR*/
-aside {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10%;
-}
-.nav-bar {
-  text-align-last: center;
-  max-width: min-content;
-}
-
-/*NAVBAR BUTTONS*/
-.nav-button {
-  max-width: min-content;
-  margin: 0.5vw;
-}
 
 /*PORTRAiT*/
 .portrait {
