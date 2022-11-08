@@ -15,9 +15,7 @@ body {
   z-index: -1;
 }
 
-.main{
-  
-}
+
 /*PRESENTATION HERO*/
 .hero {
   background-color: antiquewhite;
@@ -25,8 +23,8 @@ body {
   max-width: 50%;
   border-radius: 15px;
   padding: 2vw;
-  /*margin-left: 20vw;
-  margin-top: 10vw;*/
+  margin-left: 20vw;
+  margin-top: 10vw;
   
 }
 
