@@ -15,16 +15,22 @@ body {
   z-index: -1;
 }
 
+main{
+  max-height: max-content;
+  display: flex;
+  justify-content: space-around;
+  
+}
 
 /*PRESENTATION HERO*/
 .hero {
   background-color: antiquewhite;
   display: flex;
-  max-width: 50%;
+  max-width: 80%;
   border-radius: 15px;
   padding: 2vw;
-  margin-left: 20vw;
-  margin-top: 10vw;
+  /*margin-left: 20vw;
+  margin-top: 10vw;*/
   
 }
 
@@ -33,6 +39,7 @@ aside{
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding: 2vw;
 }
 .nav-bar {
   text-align-last: center;
@@ -52,7 +59,6 @@ a.nav-button {
 
 /*TYPEWRITER TITLE*/
 .line-1 {
-  position: relative;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -61,9 +67,9 @@ a.nav-button {
 }
 .hero-title {
   animation: typewriter 3s steps(24) 1s 1 normal both, blinkTextCursor 500ms steps(24) infinite normal;
-  display: flex;
-  flex-direction: row;
   font-size: 1.2vw;
+  align-self: center;
+  padding: 2vw;
 }
 
 @keyframes typewriter {
@@ -71,7 +77,7 @@ a.nav-button {
     width: 0;
   }
   to {
-    width: 50%;
+    width: 30%;
   }
 }
 
@@ -89,6 +95,7 @@ a.nav-button {
 .portrait {
   max-width: 20vw;
   border-radius: 15px;
+  padding: 2vw;
 }
 
 /*FOOTER*/
