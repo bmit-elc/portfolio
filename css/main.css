@@ -1,5 +1,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 * {
@@ -24,7 +26,9 @@ body {
 .hero {
   background-color: antiquewhite;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  margin: 0;
   width: 70%;
   border-radius: 3vw;
   padding: 2vw;
