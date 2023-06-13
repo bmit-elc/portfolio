@@ -1,5 +1,11 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /*BACKGROUND VIDEO*/
@@ -20,11 +26,14 @@ body {
   background-color: antiquewhite;
   display: flex;
   max-width: 50%;
-  border-radius: 15px;
-  padding: 2vw;
   margin-left: 20vw;
   margin-top: 10vw;
-  
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0;
+  width: 70%;
+  border-radius: 3vw;
+  padding: 2vw;
 }
 
 /*NAVBAR*/
@@ -32,6 +41,9 @@ aside{
   justify-content: center;
   display: flex;
   flex-direction: column;
+  float: left;
+  padding: 2vw;
+
 }
 .nav-bar {
   text-align-last: center;
@@ -47,9 +59,21 @@ aside{
   align-self: center;
 }
 
+
+a.nav-button {
+  font-size: 1.5vw;
+  color: rgb(61, 61, 60);
+  background-color: #ffdbfa;
+  margin-bottom: 1vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  text-align: center;
+  text-decoration-line: none;
+}
+
+
 /*TYPEWRITER TITLE*/
 .line-1 {
-  position: relative;
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -61,6 +85,10 @@ aside{
   display: flex;
   flex-direction: row;
   font-size: 1.2vw;
+}
+
+main{
+  float: left;
 }
 
 @keyframes typewriter {
@@ -85,7 +113,9 @@ aside{
 /*PORTRAiT*/
 .portrait {
   max-width: 20vw;
-  border-radius: 15px;
+  border-radius: 3vw;
+  padding: 1vw;
+  float: right;
 }
 
 /*FOOTER*/
