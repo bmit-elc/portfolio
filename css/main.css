@@ -51,15 +51,14 @@ a.nav-button {
 }
 
 .nav-button {
-  font-size: 1rem;
+  font-size: 1.5vw;
   color: rgb(61, 61, 60);
   background-color: #ffdbfa;
   padding: 1rem;
   border-radius: 1vw;
   margin: 0.5rem;
   display: flex;
-  align-items: center;
-  text-align: center;
+ justify-content: space-around;
 }
 
 /*INTRODUCTION DIV*/
