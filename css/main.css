@@ -160,7 +160,7 @@ footer {
   .nav-bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .nav-button {
@@ -172,7 +172,7 @@ footer {
     order: 3;
     margin-top: 1rem;
     text-align: center;
-    /* Center the image */
+  
   }
 
   .portrait {
