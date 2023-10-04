@@ -16,7 +16,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   height: 100vh;
 }
 
@@ -38,7 +38,7 @@ body {
 
 /*NAVBAR*/
 aside {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@ aside {
 
 .nav-bar {
   text-align-last: center;
-  width: 100%; 
+  width: 100%;
 }
 
 a.nav-button {
@@ -62,8 +62,8 @@ a.nav-button {
   border-radius: 1rem;
   margin: 2rem;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -74,7 +74,6 @@ a.nav-button {
 }
 
 .line-1 {
-  width: fit-content;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
@@ -146,7 +145,7 @@ footer {
   .introduction {
     order: 2;
     text-align: center;
-    margin: 3rem 0 3rem 0 ;
+    margin: 3rem 0 3rem 0;
   }
 
   .hero-title {
@@ -155,13 +154,13 @@ footer {
 
   aside {
     order: 1;
-    text-align: center; 
+    text-align: center;
   }
-    
+
   .nav-bar {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    gap: 2rem; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
   .nav-button {
@@ -172,11 +171,37 @@ footer {
   .image {
     order: 3;
     margin-top: 1rem;
-    text-align: center; /* Center the image */
+    text-align: center;
+    /* Center the image */
   }
 
   .portrait {
     max-width: 40vw;
+  }
+
+}
+
+/*******/
+
+@media (max-width: 425px) {
+  .introduction {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 6vw;
+  }
+
+  .nav-button {
+    font-size: 4vw;
+  }
+
+  .portrait {
+    max-width: 65vw;
+  }
+
+  .signature {
+    font-size: 3.5vw;
   }
 
 }
