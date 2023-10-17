@@ -1,7 +1,4 @@
-const d = new Date();
-let year = d.getFullYear();
-document.getElementById("year").innerHTML = year;
-
+//////////////////////// HOME //////////////////////////
 document.addEventListener("DOMContentLoaded", function () {
   const hero = document.querySelector(".hero");
   const navBar = document.querySelector(".nav-bar");
@@ -26,3 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start the typewriter animation after a delay
   }, 3000); // After 1.5 seconds
 });
+
+
+///////////////////////// HOME /////////////////////////////////
