@@ -18,16 +18,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #BC58D8;
 }
 
 
 /*PRESENTATION HERO*/
 .hero {
-  background-color: antiquewhite;
+  display: block;
+  background-color: rgb(247, 221, 188);
   margin: 0;
   width: max-content;
   border-radius: 2rem;
   padding: 5vw;
+  width: 0;
+  overflow: hidden;
+  transition: width 1.5s ease, opacity 1.5s ease;
+  opacity: 0;
 }
 
 .content {
@@ -45,9 +51,13 @@ aside {
   padding: 1rem;
 }
 
+
 .nav-bar {
   text-align-last: center;
   width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 1.35s ease, opacity 1.35s ease;
 }
 
 a.nav-button {
@@ -57,7 +67,7 @@ a.nav-button {
 .nav-button {
   font-size: 2vw;
   color: rgb(61, 61, 60);
-  background-color: #ffdbfa;
+  background-color: #d491e7;
   padding: 1rem;
   border-radius: 1rem;
   margin: 2rem;
@@ -65,24 +75,40 @@ a.nav-button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: background-color 0.5s, transform 0.5s;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #a94daa;
+  transform: scale(1.05);
+}
+
+.nav-button:active {
+  background-color: #8f3d91;
+  transform: scale(0.95);
 }
 
 /*INTRODUCTION DIV*/
 .introduction {
   display: flex;
   align-items: center;
+  order: 2;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+  transform: translateY(0);
+  /* Change this to 0 to make it visible from the start */
+  transition: transform 1s ease, opacity 1s ease;
 }
 
-.line-1 {
+
+.hero-title {
+  font-size: 2.4vw;
+  padding: 2vw;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-}
-
-.hero-title {
-  animation: typewriter 3s steps(24) 1s 1 normal both, blinkTextCursor 800ms steps(24) infinite normal;
-  font-size: 2.4vw;
-  padding: 2vw;
+  opacity: 0;
 }
 
 @keyframes typewriter {
@@ -109,6 +135,13 @@ a.nav-button {
 /*PORTRAiT*/
 .image {
   align-self: center;
+  transform: translateY(100%);
+  /* Initially move the navbar and image below */
+  opacity: 0;
+  /* Initially make them transparent */
+  transition: transform 1.6s ease, opacity 1.6s ease;
+  /* Add transition for smooth appearance */
+  order: 3;
 }
 
 .portrait {
@@ -142,14 +175,8 @@ footer {
     align-items: center;
   }
 
-  .introduction {
-    order: 2;
-    text-align: center;
-    margin: 2rem 0 2rem 0;
-  }
-
   .hero-title {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
   aside {
@@ -168,17 +195,25 @@ footer {
     font-size: 3vw;
   }
 
+  .nav-button.clicked {
+    background-color: #8f3d91;
+    transform: scale(0.95);
+    font-size: 2vw;
+  }
+
+  .introduction {
+    margin: 2rem 0 1rem 0;
+  }
+
   .image {
     order: 3;
     margin-top: 1rem;
     text-align: center;
-  
   }
 
   .portrait {
     max-width: 40vw;
   }
-
 }
 
 /*******/
@@ -189,7 +224,7 @@ footer {
   }
 
   .hero-title {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 
   .nav-button {
