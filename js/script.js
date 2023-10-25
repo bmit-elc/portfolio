@@ -14,15 +14,29 @@ document.addEventListener("DOMContentLoaded", function () {
     navBar.style.opacity = 1; // Make the navbar visible (fade in)
     image.style.transform = "translateY(0%)"; // Move the image back to its original position
     image.style.opacity = 1; // Make the image visible (fade in)
-  }, 1500); // After 1.5 seconds
+  }, 1200); // After 1.5 seconds
 
   setTimeout(() => {
     heroTitle.style.width = "max-content"; // Expand the hero-title to its full content
     heroTitle.style.opacity = 1; // Make the hero-title visible (fade in)
     heroTitle.style.animation = "typewriter 3s steps(24) 0.1s 1 normal both, blinkTextCursor 800ms steps(24) infinite normal";
     // Start the typewriter animation after a delay
-  }, 3000); // After 1.5 seconds
+  }, 2500); // After 1.5 seconds
 });
 
 
-///////////////////////// HOME /////////////////////////////////
+////////////////////////////////////////////////////////////
+//////////////////////// ABOUT //////////////////////////
+document.addEventListener("DOMContentLoaded", function () {
+  const video = document.querySelector(".video");
+  const heroTitleAbout = document.querySelector(".hero-title-about");
+
+  setTimeout(() => {
+    video.style.transform = "translateY(0%)";
+    video.style.opacity = 1;
+  }, 1000);
+
+  setTimeout(() => {
+    heroTitleAbout.style.opacity = 1; // Make the hero-title visible (fade in)
+  }, 1000);
+});
