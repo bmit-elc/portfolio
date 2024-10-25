@@ -32,7 +32,7 @@ body {
   margin: 0;
   width: max-content;
   border-radius: 2rem;
-  padding: 5vw;
+  padding: 4vw;
   width: 0;
   overflow: hidden;
   transition: width 1.5s ease, opacity 1.5s ease;
@@ -191,7 +191,7 @@ svg {
   margin: 0;
   width: max-content;
   border-radius: 2rem;
-  padding: 5vw;
+  padding: 4vw;
 
 }
 
@@ -303,7 +303,6 @@ svg {
   align-items: center;
   order: 2;
   text-align: center;
-  margin: 2rem 0 2rem 0;
 }
 
 .content-about {
